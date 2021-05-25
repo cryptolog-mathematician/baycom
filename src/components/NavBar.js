@@ -4,7 +4,11 @@ import { LinkContainer } from 'react-router-bootstrap'
 const NavBar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">BayCom</Navbar.Brand>
+            <Navbar.Brand href="#home"> 
+                <LinkContainer to="/">
+                    <img src="images/logo.png" width="115" height="40" alt=""></img>
+                </LinkContainer>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <span className="mr-auto">
